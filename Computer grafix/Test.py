@@ -1,0 +1,32 @@
+import turtle as t
+t.title("My Awesome Turtle Animation")
+#t.setup(500,500,0,0)
+#t.setpos(0,0)
+t.pensize(2)
+t.speed(1)
+t.color("black")
+t.bgcolor("pink")
+def curve():
+    for i in range(200):
+        t.rt(1)
+        t.fd(1)
+def heart():
+    t.fillcolor("red")
+    t.begin_fill()
+    t.lt(140)
+    t.fd(113)
+    #curve()
+    # t.lt(120)
+    # curve()
+    # t.fd(112)
+    # t.end_fill()
+heart()
+# t.hideturtle()
+# def txt():
+#     t.up()
+#     t.setpos(-68,95)
+#     t.down()
+#     t.color("yellow")
+#     t.write("Made with Love", font=("Lucida Handwriting", 12, "bold"))
+# txt()
+t.exitonclick()
